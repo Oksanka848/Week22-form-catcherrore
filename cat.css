@@ -58,3 +58,10 @@ select:invalid {
   display: block;
   color: #da383f;
 }
+#error_name {
+  font-size: 16px;
+  line-height: 1.53846154;
+  margin-top: 5px;
+  display: block;
+  color: #da383f;
+}
