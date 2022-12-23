@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img.icons8.png" type="image/x-icon">
+    <title>Анкета</title>
+    <link href="/cat.css" rel="stylesheet"/>
+</head>
+<body>
+        <form method="post" action="/post" id="form" >
+        <fieldset>
+            <legend>Имя</legend>
+<div>
+    <label for="name">Кличка питомца</label>
+    <input type="text" name="mycatname" id="name" maxlength="15" required pattern="^(?=.{1,40}$)[а-яёА-ЯЁ]+(?:[-' ][а-яёА-ЯЁ]+)*$" title="Кличка должна содержать только русские прописные и строчные буквы!"/>*
+</div>
+
+<div>
+    <label for="fio">ФИО владельца</label>
+    <input type="text" name="fio" id="fio" required pattern="^(?=.{1,40}$)[а-яёА-ЯЁ]+(?:[-' ][а-яёА-ЯЁ]+)*$" title="Имя должно содержать русские прописные и строчные буквы!"/>*
+</div>
+
+<div>
+    <label for="email">Электронная почта владельца</label>
+    <input type="email" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Это не почтовый адрес!"/>*
+</div>
+</fieldset>
+
+
+<div>
+    <label for="breeds">Выберите породу</label> *
+</div>
+<div>
+    <select name="breeds" id="breeds" required>
+        <option value=""></option>
+        <option type="text">Сибирская кошка</option>
+        <option type="text">Абиссинская кошка</option>
+        <option type="text">Британская кошка</option>
+        </select>
+</div>
+<div>
+    <label for="food">Чем питается?</label>*
+</div>
+<div>
+    <div id="checkboxes" required><span class="form-error" id="error"></span>
+        <div><label for="one"><input type="checkbox" name="food" id="one" value="сухой корм" />сухой корм</label></div>
+        <div><label for="two"> <input type="checkbox" name="food" id="two" value="влажный корм"/>влажный корм</label></div>
+        <div><label for="three"><input type="checkbox" name="food" id="three" value="натуральный корм" />натуральный корм</label></div>
+    </div>
+</div>
+<div>
+    <label for="sex" required>Выберите пол питомца</label>*
+    
+</div>
+<div>
+    <input type="radio" id="male" name="sex" value="Самец" required/>
+<label for="male">Самец</label><br>
+<input type="radio" id="female" name="sex" value="Самка" />
+<label for="female">Самка</label><br>
+</div>
+<div>
+    <label for="comment">Комментарий</label>
+    <input type="text" id="comm"/>
+</div>
+<div>
+    <section>
+        <textarea rows="5" cols="20" type="text" >Здесь можно добавить что-то важное</textarea> 
+    </section>
+</div>
+<div>
+    <label>Можете добавить фотографию питомца</label>
+    
+    <input type="file" id="myFile" />
+</div>
+
+</form>
+<div>
+    <button type="button" id="button">Сохранить</button>
+    </div> 
+<script src="cat2.js"></script>
+
+</body>
+</html>

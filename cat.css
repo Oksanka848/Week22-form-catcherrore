@@ -1,0 +1,60 @@
+* {
+  font-size: 1rem;
+  font-style: italic;
+}
+div {
+  margin: 1%;
+}
+input {
+  border: 2px solid;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin: 0.15rem;
+  min-width: 125px;
+  padding: 0.1rem;
+  transition: background-color 0.5s ease-out;
+}
+input:optional {
+  border-color: gray;
+}
+input:required {
+  border-color: rgb(9, 4, 70);
+}
+input:invalid {
+  border-color: red;
+}
+input:valid {
+  border-color: green;
+}
+
+label:invalid {
+  border-color: red;
+}
+label:valid {
+  border-color: green;
+}
+
+select:valid {
+  border-color: green;
+}
+select:invalid {
+  border-color: red;
+}
+
+#checkboxes:valid {
+  border-color: green;
+}
+
+#checkboxes:invalid {
+  border-color: red;
+}
+#error {
+  color: #da383f;
+}
+.form-error {
+  font-size: 16px;
+  line-height: 1.53846154;
+  margin-top: 5px;
+  display: block;
+  color: #da383f;
+}
